@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> browser </title>
+     <link rel="icon" type="image/png" href="images/favicon.ico">
+		<style>
+		 @font-face {
+        font-family: 'vcr'; src:url('VCR.ttf');
+        }
+		
+		body{
+			background-color: #008081; 
+			font-family: 'vcr', sans-serif;
+		}
+
+		.icon{
+			width: 65px;
+			height:65px;
+			padding: 20px;
+			color: white;
+			font-size: 14px;
+			text-align: center;
+
+		}
+		
+		#footer {
+			background-color: #C3BEC4;
+			position: fixed;
+			width: 100%;
+			height: 40px;
+			left: 0;
+			bottom: 0;
+			border-top: 1px solid #ebe6ed;
+		}
+
+		.iconimg {
+			width:50px;
+			height:50px;
+		}
+
+		a{
+			text-decoration:none;
+			color: black;
+		}
+
+		#box{
+			width: 50px;
+			height: 32px;
+			border-top: 1px #ebe6ed solid;
+			border-right:1px #a6a1a8 solid;
+			border-bottom:1px #a6a1a8 solid;
+			border-left:1px #ebe6ed solid;
+			margin:3px;
+		}
+
+		#menu {
+			background-color: #C3BEC4;
+			width: 300px;
+			height: 400px;
+			border-top: 1px #ebe6ed solid;
+			border-right:1px #a6a1a8 solid;
+			border-left:1px #ebe6ed solid;
+			border-bottom:1px #ebe6ed solid;
+			position: absolute;
+			bottom: 40px;
+			left: 0;
+			overflow: scroll;
+		}
+
+		#menu {
+			display: none;
+		}
+
+
+		td {
+			border-top: 1px #ebe6ed solid;
+			border-right:1px #a6a1a8 solid;
+			border-left:1px #ebe6ed solid;
+			border-bottom:1px #a6a1a8 solid;
+			font-size: 17px;
+			height: 40px;
+			width: 298px;
+		}
+
+		.fix{
+			position: absolute;
+			bottom: .03px;
+			left: 5px;
+		}
+		
+		::-webkit-scrollbar {
+    		width: 0px; 
+    		background: transparent;
+   		 }
+
+  	  #guy {
+    	border-top: 1px #ebe6ed solid;
+		border-right:1px #a6a1a8 solid;
+		border-left:1px #ebe6ed solid;
+		border-bottom:1px #a6a1a8 solid;
+		position: absolute;
+		right: 2px;
+		bottom: 2px;
+		width: 550px;
+		height: 32px;
+
+  	  }
+  	  .click{
+  	  border:1px dashed #008081;
+  	  }
+
+
+  	  .click:hover{
+  	  	border:1px dashed white;
+  	  }
+
+		</style>
+    
+	</head>
+	<body>
+		<a href="https://www.youtube.com/watch?v=xFxYZ8i4-ac" class=""><div class="icon click"> <img class="iconimg" src="images/music.gif"> <br>music</div> </a>
+		<br>
+		<a href="https://www.sublimetext.com/"><div class="icon click"> <img class="iconimg" src="images/sublime.png"> <br>sublime text</div> </a>
+		<br>
+		<a href="https://www.google.com/"><div class="icon click"> <img class="iconimg" src="images/chrome.png"> <br>google chrome</div> </a>
+		<script>
+
+			function Menu() {
+		  var x = document.getElementById("menu");
+  		if (x.style.display === "none") {
+    	x.style.display = "block";
+ 		 } else {
+    	x.style.display = "none";
+			}
+		}
+		</script>
+
+
+		<div id="footer"> 
+			<div id="box" onclick="Menu()"> <p class="fix">Start</p> </div>
+		</div>
+
+		<div id="guy"><p id="time"></p>
+			<script>
+	var d = new Date();
+	document.getElementById("time").innerHTML = d;
+		</script>
+	</p></div>
+
+		<div id="menu">
+			<table id="tab">
+      	<tr> <td><a href="index.html">home</a></td></tr>
+				<tr> <td><a href="page2.html">about Me</a></td></tr>
+				<tr> <td><a href="spindex.html"></a>links </td></tr>
+      	<tr> <td><a href="portfolio.html"> art</a></td></tr>
+      	<tr> <td><a href="epic.html"> Cool !!! </a></td></tr>
+				<tr> <td><a href="http://www.yotuba.com/">yotsuba studio</a></td></tr>
+			</table>
+		</div>
+
+	</body>
+</html>
